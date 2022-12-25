@@ -34,6 +34,7 @@ public class LoginController {
 	 */
 	@RequestMapping("/login")
 	public String getLogin(User user,HttpServletRequest request) {
+		System.out.println("登录");
 		//代码编写处
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
